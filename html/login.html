@@ -13,43 +13,31 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
 
 </head>
-	<body style="background-image: url(/images/dd.png);">
-        <div class="d-flex w-100 justify-content-center align-self-center">
-            <div style="justify-content: center; width: 50rem;">
-                <div class="shadow-lg p-3 mb-5 bg-white rounded">
-
-                    <div class="row justify-content-center">
-                        <div class="col-md-6 mx-auto">
-                            <h2 style="font-family: 'Poppins', sans-serif; text-align: center;">ReWire</h2>
+	<body>
+            <div class="d-flex flex-lg-row flex-column-reverse">
+                <div class="card card1">
+                    <div class="row justify-content-center my-auto">
+                        <div class="col-md-8 col-10 my-5">
+                            <div class="row justify-content-center px-3 mb-3"> <img id="logo" src="/images/dd.png"> </div>
+                            <h3 class="mb-5 text-center heading">We are ReWire</h3>
+                            <h6 class="msg-info">Please login to your account</h6>
+                            <div class="form-group">  <input type="text" id="email" name="email" placeholder="Username" class="form-control"> </div>
+                            <div class="form-group">  <input type="password" id="psw" name="psw" placeholder="Password" class="form-control"> </div>
+                            <div class="row justify-content-center my-3 px-3"> <button class="btn-block btn-color">Login</button> </div>
+                            <div class="row justify-content-center my-2"> <a href="/reset"><small  class="text-muted">Forgot Password?</small></a> </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center">
-                        <div class="col-md-6 mx-auto">
-                            <div class="login-wrap p-0">
-                        <form action="#" class="signin-form">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Username" required>
-                            </div>
-                        <div class="form-group">
-                        <input id="password-field" type="password" class="form-control" placeholder="Password" required>
-                        <div class="w-30 text-md-center">
-                            <a href="/reset" style="color: rgb(12, 15, 189)">Forgot Password</a>
-                        </div>
-                        </div>
-                        <button type="submit" class="form-control btn btn-primary submit px-3">Login</button>
-                    
-                    </form>
-                    <p class="w-100 text-center">&mdash; or &mdash;</p>
-                    <div class="form-group">
-                        <button type="button" class="form-control btn btn-primary submit px-3" onclick="window.location='/register'">Create Account</button>
+                    <div class="bottom text-center mb-5">
+                        <p href="#" class="sm-text mx-auto mb-3">Don't have an account?<button class="btn btn-white ml-2" onclick="window.location='/register'">Create account</button></p>
                     </div>
+                </div>
+                <div class="card card2">
+                    <div class="my-auto mx-md-5 px-md-5 right">
+                        <h3 class="text-white">We are more than just a chrome extension</h3> <small class="text-white">We are here to keep you driven, focused, and on track. Whether you have an exam coming up or need to crank out a project, we'll help you accomplish whatever you need.</small>
                     </div>
                 </div>
             </div>
-                
-            
-        </div>
-	</section>
+   
 
 	
 
