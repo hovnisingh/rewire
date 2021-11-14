@@ -14,7 +14,12 @@ app.get('/style.css', function (req, res) {
   res.sendFile(__dirname + '/html/style.css');
 })
 
-app.get('/images/bb.jpeg', function (req, res) {
-  res.sendFile(__dirname + '/html/images/bb.jpeg');
+app.get('/images/dd.png', function (req, res) {
+  res.sendFile(__dirname + '/html/images/dd.png');
 })
 
+
+
+app.get('/register', function (req, res) {
+  res.sendFile(__dirname + '/html/register.html');
+})
