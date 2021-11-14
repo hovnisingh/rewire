@@ -10,7 +10,9 @@ app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
 
-
+app.get('/style.css', function (req, res) {
+  res.sendFile(__dirname + '/html/style.css');
+})
 
 app.get('/images/bb.jpeg', function (req, res) {
   res.sendFile(__dirname + '/html/images/bb.jpeg');
