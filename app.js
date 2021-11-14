@@ -23,3 +23,7 @@ app.get('/images/dd.png', function (req, res) {
 app.get('/register', function (req, res) {
   res.sendFile(__dirname + '/html/register.html');
 })
+
+app.get('/reset', function (req, res) {
+  res.sendFile(__dirname + '/html/reset.html');
+})
