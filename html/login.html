@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -37,9 +38,29 @@
                     </div>
                 </div>
             </div>
-   
 
-	
+        
+        <script type="module" src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js">
+
+            const firebaseConfig = {
+                apiKey: "AIzaSyBqPCgCbMglzLC0NdhVTfjtfU1ZRSEoTZQ",
+                authDomain: "rewire-d1b87.firebaseapp.com",
+                projectId: "rewire-d1b87",
+                storageBucket: "rewire-d1b87.appspot.com",
+                messagingSenderId: "817362589340",
+                appId: "1:817362589340:web:b48d80df88be31ed153f59",
+                measurementId: "G-FDHKFDKXHR"
+              };
+              
+              // Initialize Firebase
+              const app = App.initializeApp(firebaseConfig);
+
+              var ref = firebase.database().ref();                           
+                ref.on("value", function(snapshot){
+                output.innerHTML = JSON.stringify(snapshot.val(), null, 2);
+                });
+                console.log(output.innerHTML)
+        </script>
 
 	</body>
 </html>

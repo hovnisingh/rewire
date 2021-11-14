@@ -10,13 +10,9 @@ const express = require('express')
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 var admin = require("firebase-admin");
 
-var serviceAccount = require("/Users/hs674/Documents/GitHub/rewire/serviceKey.json");
 const app = express()
 
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://rewire-d1b87-default-rtdb.firebaseio.com"
-});
+
 
 // Initialize Firebase
 const port = 3000
@@ -46,3 +42,5 @@ app.get('/register', function (req, res) {
 app.get('/reset', function (req, res) {
   res.sendFile(__dirname + '/html/reset.html');
 })
+
+
